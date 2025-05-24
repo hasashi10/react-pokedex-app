@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #b71c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #d32f2f, #b71c1c);
+  overflow: hidden;
+}
+
+.pokedex-container {
+  width: 900px;
+  height: 500px;
+  background: #040101;
+  border: 12px solid #212121;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: inset -4px -4px 10px rgba(0,0,0,0.3), inset 4px 4px 10px rgba(255,255,255,0.2);
+  position: relative;
+}
+
+/* Top LED lights */
+.pokedex-container::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 25px;
+  height: 25px;
+  background: radial-gradient(circle at center, #03a9f4 30%, #01579b 70%);
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 15px #00e5ff;
+}
+
+.pokedex-left {
+  width: 50%;
+  padding: 20px;
+  background: #c62828;
+  border-right: 6px solid #212121;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen {
+  background: #212121;
+  color: #fff;
+  border: 6px inset #000;
+  height: 300px;
+  width: 250px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 0 10px #000 inset;
+}
+
+.screen img {
+  width: 150px;
+  image-rendering: pixelated;
+  margin-top: 10px;
+}
+
+.pokedex-right {
+  width: 50%;
+  padding: 20px;
+  background: #b71c1c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.data-section {
+  background: #f5f5f5;
+  color: black;
+  border-radius: 10px;
+  padding: 15px;
+  flex-grow: 1;
+  box-shadow: inset 2px 2px 6px rgba(0,0,0,0.2);
+  overflow-y: auto;
+  font-size: 12px;
+}
+
+.data-section h3 {
+  margin-top: 0;
+  color: #c62828;
+}
+
+.data-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.data-section li {
+  background: #ffe082;
+  padding: 6px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+button {
+  background-color: #ffeb3b;
+  border: 2px solid #212121;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #212121;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #fff176;
+}
+
